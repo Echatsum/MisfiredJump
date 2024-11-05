@@ -1,0 +1,48 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>$MISFIREDJUMP_PLANET_SUN_NAME</ID>
+
+    <!-- Broken Warp -->
+    <Entry><ID>MISFIREDJUMP_ENTRY_BROKENWARP</ID>
+        <Name>$MISFIREDJUMP_ENTRY_BROKENWARP</Name>
+        <Curiosity>MISFIREDJUMP_CURIOSITY_DEEPSPACE_PROBES</Curiosity>
+
+        <ExploreFact><ID>MISFIREDJUMP_LOG_BROKENWARP_INTRO</ID>
+            <Text>$MISFIREDJUMP_LOG_BROKENWARP_INTRO</Text>
+        </ExploreFact>
+        <ExploreFact><ID>MISFIREDJUMP_LOG_BROKENWARP_INTRO_2</ID>
+            <Text>$MISFIREDJUMP_LOG_BROKENWARP_INTRO_2</Text>
+        </ExploreFact>
+    </Entry>
+
+    <!-- Peculiar Symbols -->
+    <Entry><ID>MISFIREDJUMP_CURIOSITY_SYMBOLS</ID>
+        <Name>$MISFIREDJUMP_CURIOSITY_SYMBOLS</Name>
+        <Curiosity>MISFIREDJUMP_CURIOSITY_SYMBOLS</Curiosity>
+        <IsCuriosity />
+        <IgnoreMoreToExplore />
+
+        <RumorFact><ID>MISFIREDJUMP_LOG_SYMBOLS_TELESCOPE_RUMOR</ID>
+            <SourceID>MISFIREDJUMP_ENTRY_TELESCOPE_CONSOLE</SourceID>
+            <Text>$MISFIREDJUMP_LOG_SYMBOLS_TELESCOPE</Text>
+        </RumorFact>
+        <RumorFact><ID>MISFIREDJUMP_LOG_SYMBOLS_CANNON_RUMOR</ID>
+            <SourceID>MISFIREDJUMP_ENTRY_ASTEROID</SourceID>
+            <Text>$MISFIREDJUMP_LOG_SYMBOLS_CANNON</Text>
+        </RumorFact>
+        <RumorFact><ID>MISFIREDJUMP_LOG_SYMBOLS_ERNESTO_RUMOR</ID>
+            <SourceID>MISFIREDJUMP_ENTRY_HIDDEN_STONE</SourceID>
+            <Text>$MISFIREDJUMP_LOG_SYMBOLS_ERNESTO</Text>
+        </RumorFact>
+
+        <ExploreFact><ID>MISFIREDJUMP_LOG_SYMBOLS_TELESCOPE</ID>
+            <Text>$MISFIREDJUMP_LOG_SYMBOLS_TELESCOPE</Text>
+        </ExploreFact>
+        <ExploreFact><ID>MISFIREDJUMP_LOG_SYMBOLS_CANNON</ID>
+            <Text>$MISFIREDJUMP_LOG_SYMBOLS_CANNON</Text>
+        </ExploreFact>
+        <ExploreFact><ID>MISFIREDJUMP_LOG_SYMBOLS_ERNESTO</ID>
+            <Text>$MISFIREDJUMP_LOG_SYMBOLS_ERNESTO</Text>
+        </ExploreFact>
+    </Entry>
+</AstroObjectEntry>

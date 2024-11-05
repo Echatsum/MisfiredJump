@@ -1,0 +1,106 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>$MISFIREDJUMP_PLANET_TELESCOPE_NAME</ID>
+
+    <!-- Outward Gazer -->
+    <Entry><ID>MISFIREDJUMP_ENTRY_OUTWARD_GAZER</ID>
+        <Name>$MISFIREDJUMP_ENTRY_OUTWARD_GAZER</Name>
+        <Curiosity>MISFIREDJUMP_CURIOSITY_TELESCOPE</Curiosity>
+
+        <IgnoreMoreToExplore />
+
+        <ExploreFact><ID>MISFIREDJUMP_LOG_OUTWARD_GAZER</ID>
+            <Text>$MISFIREDJUMP_LOG_OUTWARD_GAZER</Text>
+        </ExploreFact>
+    </Entry>
+
+    <!-- Telescope -->
+    <Entry><ID>MISFIREDJUMP_CURIOSITY_TELESCOPE</ID>
+        <Name>$MISFIREDJUMP_CURIOSITY_TELESCOPE</Name>
+        <Curiosity>MISFIREDJUMP_CURIOSITY_TELESCOPE</Curiosity>
+        <IsCuriosity />
+
+        <RumorFact><ID>MISFIREDJUMP_CURIOSITY_TELESCOPE_RUMOR</ID>
+            <SourceID>MISFIREDJUMP_ENTRY_OUTWARD_GAZER</SourceID>
+            <Text>$MISFIREDJUMP_LOG_TELESCOPE_GROUND</Text>
+        </RumorFact>
+        <RumorFact><ID>MISFIREDJUMP_LOG_TELESCOPE_LENS_RUMOR</ID>
+            <SourceID>MISFIREDJUMP_CURIOSITY_WORKSHOP</SourceID>
+            <Text>$MISFIREDJUMP_LOG_WORKSHOP_LENS</Text>
+        </RumorFact>
+        <RumorFact><ID>MISFIREDJUMP_LOG_TELESCOPE_SYMBOL_RUMOR</ID>
+            <SourceID>MISFIREDJUMP_CURIOSITY_SYMBOLS</SourceID>
+            <Text>$MISFIREDJUMP_LOG_TELESCOPE_SYMBOL_RUMOR</Text>
+        </RumorFact>
+        <RumorFact><ID>MISFIREDJUMP_LOG_TELESCOPE_ORIENTATION_RUMOR</ID>
+            <SourceID>MISFIREDJUMP_ENTRY_TELESCOPE_CONSOLE</SourceID>
+            <Text>$MISFIREDJUMP_LOG_TELESCOPE_ORIENTATION_RUMOR</Text>
+        </RumorFact>
+
+        <ExploreFact><ID>MISFIREDJUMP_LOG_TELESCOPE_GROUND</ID>
+            <Text>$MISFIREDJUMP_LOG_TELESCOPE_GROUND</Text>
+        </ExploreFact>
+        <ExploreFact><ID>MISFIREDJUMP_LOG_TELESCOPE_LENS</ID>
+            <Text>$MISFIREDJUMP_LOG_TELESCOPE_LENS</Text>
+        </ExploreFact>
+    </Entry>
+
+    <!-- Telescope Console -->
+    <Entry><ID>MISFIREDJUMP_ENTRY_TELESCOPE_CONSOLE</ID>
+        <Name>$MISFIREDJUMP_ENTRY_TELESCOPE_CONSOLE</Name>
+        <Curiosity>MISFIREDJUMP_CURIOSITY_TELESCOPE</Curiosity>
+
+        <RumorFact><ID>MISFIREDJUMP_LOG_TELESCOPE_CONSOLE_POWERON_RUMOR</ID>
+            <SourceID>MISFIREDJUMP_ENTRY_LOWER_BASEMENT</SourceID>
+            <Text>$MISFIREDJUMP_LOG_TELESCOPE_CONSOLE_POWERON_RUMOR</Text>
+        </RumorFact>
+
+        <ExploreFact><ID>MISFIREDJUMP_LOG_TELESCOPE_CONSOLE</ID>
+            <Text>$MISFIREDJUMP_LOG_TELESCOPE_CONSOLE</Text>
+        </ExploreFact>
+        <ExploreFact><ID>MISFIREDJUMP_LOG_TELESCOPE_CONSOLE_2</ID>
+            <Text>$MISFIREDJUMP_LOG_TELESCOPE_CONSOLE_2</Text>
+        </ExploreFact>
+        <ExploreFact><ID>MISFIREDJUMP_LOG_TELESCOPE_CONSOLE_NOLENS</ID>
+            <Text>$MISFIREDJUMP_LOG_TELESCOPE_CONSOLE_NOLENS</Text>
+        </ExploreFact>
+        <ExploreFact><ID>MISFIREDJUMP_LOG_TELESCOPE_CONSOLE_LENS</ID>
+            <Text>$MISFIREDJUMP_LOG_TELESCOPE_CONSOLE_LENS</Text>
+        </ExploreFact>
+    </Entry>
+
+    <!-- Lower Basement -->
+    <Entry><ID>MISFIREDJUMP_ENTRY_LOWER_BASEMENT</ID>
+        <Name>$MISFIREDJUMP_ENTRY_LOWER_BASEMENT</Name>
+        <Curiosity>MISFIREDJUMP_CURIOSITY_TELESCOPE</Curiosity>
+
+        <ExploreFact><ID>MISFIREDJUMP_LOG_LOWER_BASEMENT_DOOR</ID>
+            <Text>$MISFIREDJUMP_LOG_LOWER_BASEMENT_DOOR</Text>
+        </ExploreFact>
+        <ExploreFact><ID>MISFIREDJUMP_LOG_LOWER_BASEMENT_BATTERIES</ID>
+            <Text>$MISFIREDJUMP_LOG_LOWER_BASEMENT_BATTERIES</Text>
+        </ExploreFact>
+        <ExploreFact><ID>MISFIREDJUMP_LOG_LOWER_BASEMENT_FLOODING</ID>
+            <Text>$MISFIREDJUMP_LOG_LOWER_BASEMENT_FLOODING</Text>
+        </ExploreFact>
+        <ExploreFact><ID>MISFIREDJUMP_LOG_LOWER_BASEMENT_POWERON</ID>
+            <Text>$MISFIREDJUMP_LOG_LOWER_BASEMENT_POWERON</Text>
+        </ExploreFact>
+    </Entry>
+
+    <!-- Hidden Stone -->
+    <Entry><ID>MISFIREDJUMP_ENTRY_HIDDEN_STONE</ID>
+        <Name>$MISFIREDJUMP_ENTRY_HIDDEN_STONE</Name>
+        <Curiosity>MISFIREDJUMP_CURIOSITY_SYMBOLS</Curiosity>
+
+        <RumorFact><ID>MISFIREDJUMP_LOG_HIDDEN_STONE_RUMOR</ID>
+            <SourceID>MISFIREDJUMP_ENTRY_OUTWARD_GAZER</SourceID>
+            <Text>$MISFIREDJUMP_LOG_HIDDEN_STONE</Text>
+        </RumorFact>
+
+        <ExploreFact><ID>MISFIREDJUMP_LOG_HIDDEN_STONE</ID>
+            <Text>$MISFIREDJUMP_LOG_HIDDEN_STONE</Text>
+        </ExploreFact>
+    </Entry>
+
+</AstroObjectEntry>

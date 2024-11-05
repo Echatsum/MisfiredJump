@@ -1,0 +1,123 @@
+ManifestFileVersion: 0
+CRC: 4072651110
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4f056d06a1af25c07230df5fb6c1c6e6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 669a0c8a30b109d438f7f1c8d2e069be
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 2122314600, guid: 50543a93c73211348a3344bb7ba9f446, type: 3}
+- Class: 114
+  Script: {fileID: 1815676809, guid: 50543a93c73211348a3344bb7ba9f446, type: 3}
+- Class: 114
+  Script: {fileID: 1451972975, guid: 50543a93c73211348a3344bb7ba9f446, type: 3}
+- Class: 114
+  Script: {fileID: 533983786, guid: 50543a93c73211348a3344bb7ba9f446, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d1ee5aa01dd104b247e70c71e44facaf, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fbb2498122f7e23a2e87544333cb528f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: dab2fbc1d63988697a57c20e75208116, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b510d252798b94e5d72fb33fbb25a1ad, type: 3}
+- Class: 114
+  Script: {fileID: -1784576696, guid: 50543a93c73211348a3344bb7ba9f446, type: 3}
+- Class: 114
+  Script: {fileID: -471746413, guid: 50543a93c73211348a3344bb7ba9f446, type: 3}
+- Class: 114
+  Script: {fileID: 283754727, guid: 50543a93c73211348a3344bb7ba9f446, type: 3}
+- Class: 114
+  Script: {fileID: 751791300, guid: 50543a93c73211348a3344bb7ba9f446, type: 3}
+- Class: 114
+  Script: {fileID: 925533144, guid: 50543a93c73211348a3344bb7ba9f446, type: 3}
+- Class: 114
+  Script: {fileID: -30976519, guid: 50543a93c73211348a3344bb7ba9f446, type: 3}
+- Class: 114
+  Script: {fileID: 643735174, guid: 50543a93c73211348a3344bb7ba9f446, type: 3}
+- Class: 114
+  Script: {fileID: 1561408703, guid: 50543a93c73211348a3344bb7ba9f446, type: 3}
+- Class: 114
+  Script: {fileID: 1656771770, guid: 50543a93c73211348a3344bb7ba9f446, type: 3}
+- Class: 114
+  Script: {fileID: -946207648, guid: 50543a93c73211348a3344bb7ba9f446, type: 3}
+- Class: 114
+  Script: {fileID: 1829523491, guid: 50543a93c73211348a3344bb7ba9f446, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 500372b3b1087d375c2f72ed03fa5a23, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 567b10f3592a22d2bef7141ba8f84acb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a223d69493f03f4a8e6bda998c52d250, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1beb2a46e0dd133c749d1f6530e10662, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2ca598178f775e7dc1b937bc0b32aae7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8a3f0f389341c132f21af676b0f2d74c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f913c288c393f80a7e923fc1c775f4fb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0053d129d589d30957bcc3b1958fc878, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 25b7e56961bf1df33ed31b8c786ab1c3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 651bf6a97f095be1000b67022b3d85c7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2145ed3a866d4bd5a94d98ee05d0fa4f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1f3014da1c89ce2573a27c371d8ccd9f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7f2e3f7cc6baeb3499f9963353d7b458, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9893321d896ff975d056df09969d1ee0, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Jam4Prefabs/LensFrame.prefab
+- Assets/Jam4Prefabs/Settlement.prefab
+- Assets/Jam4Prefabs/LavaBuilding.prefab
+- Assets/Jam4Prefabs/Car.prefab
+- Assets/Jam4Prefabs/Lens.prefab
+- Assets/Jam4Prefabs/TelescopeBuilding.prefab
+- Assets/Jam4Prefabs/CannonBuildings.prefab
+- Assets/Jam4Prefabs/Probe.prefab
+- Assets/Jam4Prefabs/BukradEgg.prefab
+Dependencies: []

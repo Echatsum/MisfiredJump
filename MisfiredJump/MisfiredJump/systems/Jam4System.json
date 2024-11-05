@@ -1,0 +1,120 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
+	"canEnterViaWarpDrive": true,
+	"canExitViaWarpDrive": true, // For now
+	"respawnHere": true,
+	"mapRestricted": false,
+	"loopDuration": 15, // TODO
+	"name": "Jam4System",
+	"entryPositions": [
+		// [PURPLE]
+		{
+			"id": "MISFIREDJUMP_ENTRY_BROKENWARP",
+			"position": { "x": -300, "y": 600 } // TODO
+		},
+		{
+			"id": "MISFIREDJUMP_ENTRY_ERNESTO_OBJECT",
+			"position": { "x": 300, "y": 600 } // TODO
+		},
+		{
+			"id": "MISFIREDJUMP_ENTRY_ERNESTO",
+			"position": { "x": 350, "y": 500 } // TODO
+		},
+		{
+			"id": "MISFIREDJUMP_ENTRY_DEEPSPACE_PROBES_OBJECT",
+			"position": { "x": 600, "y": 600 } // TODO
+		},
+		{
+			"id": "MISFIREDJUMP_CURIOSITY_DEEPSPACE_PROBES",
+			"position": { "x": 780, "y": 600 } // TODO
+		},
+		{
+			"id": "MISFIREDJUMP_ENTRY_LOST_CORE",
+			"position": { "x": 900, "y": 600 } // TODO
+		},
+		// [BLUE]
+		{
+			"id": "MISFIREDJUMP_ENTRY_OUTWARD_GAZER",
+			"position": { "x": -300, "y": 0 } // TODO
+		},
+		{
+			"id": "MISFIREDJUMP_CURIOSITY_TELESCOPE",
+			"position": { "x": 0, "y": 0 } // TODO
+		},
+		{
+			"id": "MISFIREDJUMP_ENTRY_TELESCOPE_CONSOLE",
+			"position": { "x": 150, "y": -300 } // TODO
+		},
+		{
+			"id": "MISFIREDJUMP_ENTRY_LOWER_BASEMENT",
+			"position": { "x": -50, "y": -300 } // TODO
+		},
+		// [GREY]
+		{
+			"id": "MISFIREDJUMP_ENTRY_HIDDEN_STONE",
+			"position": { "x": -150, "y": -600 } // TODO
+		},
+		{
+			"id": "MISFIREDJUMP_CURIOSITY_SYMBOLS",
+			"position": { "x": 600, "y": -600 } // TODO
+		},
+		{
+			"id": "MISFIREDJUMP_ENTRY_ASTEROID",
+			"position": { "x": 1000, "y": -600 } // TODO
+		},
+		// [GREEN]
+		{
+			"id": "MISFIREDJUMP_CURIOSITY_WORKSHOP",
+			"position": { "x": 900, "y": 0 } // TODO
+		},
+		{
+			"id": "MISFIREDJUMP_ENTRY_TRANQUIL_HUSK",
+			"position": { "x": 1200, "y": 0 } // TODO
+		},
+		// [RED]
+		{
+			"id": "MISFIREDJUMP_CURIOSITY_LAVA_POD",
+			"position": { "x": 1250, "y": 450 } // TODO
+		},
+		{
+			"id": "MISFIREDJUMP_ENTRY_SCALDING_ABYSS",
+			"position": { "x": 1500, "y": 200 } // TODO
+		},
+	],
+	"curiosities": [
+		// [PURPLE]
+		{
+			"id": "MISFIREDJUMP_CURIOSITY_DEEPSPACE_PROBES",
+			"color": { "r": 200, "g": 120, "b": 200, "a": 255 }, // TODO
+    		"highlightColor": { "r": 240, "g": 120, "b": 240, "a": 255 } // TODO
+		},
+		// [BLUE]
+		{
+			"id": "MISFIREDJUMP_CURIOSITY_TELESCOPE",
+			"color": { "r": 120, "g": 120, "b": 240, "a": 255 }, // TODO
+    		"highlightColor": { "r": 150, "g": 150, "b": 240, "a": 255 } // TODO
+		},
+		// [GREY]
+		{
+			"id": "MISFIREDJUMP_CURIOSITY_SYMBOLS",
+			"color": { "r": 120, "g": 120, "b": 120, "a": 255 }, // TODO
+    		"highlightColor": { "r": 150, "g": 150, "b": 150, "a": 255 } // TODO
+		},
+		// [GREEN]
+		{
+			"id": "MISFIREDJUMP_CURIOSITY_WORKSHOP",
+			"color": { "r": 120, "g": 240, "b": 120, "a": 255 }, // TODO
+    		"highlightColor": { "r": 150, "g": 240, "b": 150, "a": 255 } // TODO
+		},
+		// [RED]
+		{
+			"id": "MISFIREDJUMP_CURIOSITY_LAVA_POD",
+			"color": { "r": 240, "g": 120, "b": 120, "a": 255 }, // TODO
+    		"highlightColor": { "r": 240, "g": 150, "b": 150, "a": 255 } // TODO
+		},
+	],
+	"initialReveal": [
+		"MISFIREDJUMP_LOG_BROKENWARP_INTRO",
+		"MISFIREDJUMP_LOG_BROKENWARP_INTRO_2"
+	]
+}

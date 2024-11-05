@@ -1,0 +1,11 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock><ID>1</ID>
+		<LocationA/>
+		<Text>4th wall break: If you're reading this it's because I haven't managed to fix the socket on the arm before the end of the jam.</Text>
+	</TextBlock>
+	<TextBlock><ID>2</ID>
+		<ParentID>1</ParentID>
+		<LocationA/>
+		<Text>Still, it's only a visual bug. So go ahead and interact with the grabber.</Text>
+	</TextBlock>
+</NomaiObject>

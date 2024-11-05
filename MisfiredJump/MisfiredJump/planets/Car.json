@@ -1,0 +1,70 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name" : "Ernesto's car",
+	"starSystem": "Jam4System",
+	"Base": {
+		"centerOfSolarSystem": false,
+		"groundSize": 0,
+		"surfaceSize": 0,
+		"hasMapMarker": false,
+		"showMinimap": false,
+	},
+	"canShowOnTitle": false,
+	"Orbit": {
+		"primaryBody": "Jam4Sun",
+		"isStatic": true,
+		"staticPosition": { "x": 30000, "y": 1234, "z": 20000},
+		"isTidallyLocked": true,
+		"alignmentAxis": { "x": -1, "y": 0, "z": 0},
+	},
+	"Props": {
+		"details": [
+			{
+				"rename": "Car",
+				// path to prop
+				"assetBundle": "assetbundles/misfiredjumpbundle",
+				"path": "Assets/Jam4Prefabs/Car.prefab",
+				// position
+				"position": { "x": 0, "y": 0, "z": 0 },
+				"rotation": { "x": 0, "y": 70, "z": 0 },
+				"scale" : 0.5,
+			},
+			{
+				"rename": "Ernesto",
+				// path to prop
+				"path": "Anglerfish_Body/Beast_Anglerfish",
+				"removeChildren": [
+					"B_angler_root/B_angler_body01/B_angler_body02/B_angler_antenna01/B_angler_antenna02/B_angler_antenna03/B_angler_antenna04/B_angler_antenna05/B_angler_antenna06/B_angler_antenna07/B_angler_antenna08/B_angler_antenna09/B_angler_antenna10/B_angler_antenna11/B_angler_antenna12_end"
+				],
+				// position
+				"position": { "x": -7, "y": 0, "z": 0 },
+				"rotation": { "x": 20, "y": 200, "z": 340 },
+				"scale" : 0.02,
+			},
+			{
+				"rename": "Geswaldo",
+				// path to prop
+				"path": "GiantsDeep_Body/Sector_GD/Sector_GDInterior/Jellyfish_GDInterior/Jellyfish_Pivot (1)/Jellyfish_Body/Beast_GD_Jellyfish_v4",
+				// position
+				"position": { "x": 8, "y": 1, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+				"scale" : 0.08,
+			},
+		],
+		"dialogue": [
+			{
+				"xmlFile": "dialogues/Ernesto.xml",
+				"radius": 2,
+				"parentPath": "Sector/Ernesto",
+				"isRelativeToParent": true,
+				"pathToAnimController": "Sector/Ernesto"
+			}
+		],
+		"entryLocation": [
+			{
+				"id": "MISFIREDJUMP_ENTRY_ERNESTO_OBJECT",
+				"isRelativeToParent": true
+			}
+		]
+	},
+}

@@ -1,0 +1,81 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name" : "Deep Space Objects",
+	"starSystem": "Jam4System",
+	"Base": {
+		"centerOfSolarSystem": false,
+		"groundSize": 0,
+		"surfaceSize": 0,
+		"hasMapMarker": false,
+		"showMinimap": false,
+	},
+	"canShowOnTitle": false,
+	"Orbit": {
+		"primaryBody": "Jam4Sun",
+		"isStatic": true,
+		"staticPosition": { "x": 12121, "y": -5454, "z": -32323}, // TODO
+		"isTidallyLocked": true,
+		"alignmentAxis": { "x": -1, "y": 0, "z": 0},
+	},
+	"ShipLog": {		
+		"xmlFile": "shiplog/Probe_shiplog.xml",
+		"spriteFolder": "shiplog/sprites",
+        "mapMode": {
+			"manualPosition": { "x": 1200, "y": 300 },
+			"manualNavigationPosition": { "x": 4, "y": 1 },
+			"scale": 1,
+            "revealedSprite": "shiplog/sprites/solar/Probe.png",
+            "invisibleWhenHidden": true
+        }
+	},
+	"Props": {
+		"details": [
+			{
+				"rename": "Probe",
+				// path to prop
+				"assetBundle": "assetbundles/misfiredjumpbundle",
+				"path": "Assets/Jam4Prefabs/Probe.prefab",
+				// position
+				"position": { "x": 0, "y": 0, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 90 },
+				"scale" : 2,
+				"alignRadial": false
+			},
+		],
+		"entryLocation": [
+			{
+				"id": "MISFIREDJUMP_ENTRY_DEEPSPACE_PROBES_OBJECT",
+				"isRelativeToParent": true
+			},
+		],
+		"dialogue": [
+			{
+				"xmlFile": "dialogues/JamEnding.xml",
+				"isRelativeToParent": true,
+				"radius": 0,
+				"remoteTrigger": {
+					"isRelativeToParent": true,
+					"radius": 20
+				}
+			}
+		]
+	},
+	"Volumes": {
+		"revealVolumes": [
+			{
+				"isRelativeToParent": true,
+				"radius": 30,
+				"reveals": [ "MISFIREDJUMP_LOG_PROBE_SIGNAL", "MISFIREDJUMP_LOG_PROBE_SIGNAL_2"],
+			}
+		],
+		"creditsVolume": [
+			{
+				"isRelativeToParent": true,
+				"radius": 5,
+				"creditsType": "fast",
+				"deathType": "meditation",
+				"gameOverText": "After one more puzzle, you manage to repair your ship and escape back to home."
+			}
+		]
+	}
+}

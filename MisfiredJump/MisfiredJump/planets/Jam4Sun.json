@@ -1,0 +1,61 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name" : "Jam4Sun",
+	"starSystem": "Jam4System",
+	"Base": {
+		"centerOfSolarSystem": true,
+		"gravityFallOff": "inverseSquared",
+		"surfaceSize": 2000,
+		"surfaceGravity": 20,
+	},
+	"Star": {
+		// basics (size and color)
+		"size": 2000,
+		"curve": [ // TODO: Maybe make unstable
+			{ "time": 1, "value": 1 },
+			{ "time": 6, "value": 2 },
+			{ "time": 12, "value": 1 },
+			{ "time": 15, "value": 3 },
+		],
+		"tint": { "r": 130, "g": 250, "b": 240 },
+		"endTint": { "r": 250, "g": 130, "b": 240 },
+		// light emitted
+		"lightRadius": 50000, // (default 50k)
+		"solarLuminosity": 1, // TODO: see if worth being more luminous
+		"lightTint": { "r": 130, "g": 250, "b": 240 },
+		// life and death
+		"lifespan": 15,
+		"stellarDeathType": "supernova", // default, none, planetaryNebula, supernova
+		"stellarRemnantType": "default", // default, whiteDwarf, neutronStar, blackHole, custom
+		"supernovaSize": 50000,
+		"supernovaTint": { "r": 130, "g": 250, "b": 240 },
+        "solarFlareSettings": {
+            "scaleFactor": 20, // TODO: Massive flares
+            // TODO: see what frequency feels right
+        }
+        //"starCollapseRampTexture": "assets/SunRamp.png"
+	},
+    "AsteroidBelt": {
+        "amount": 120, // TODO, probably 150-200 would do
+        "innerRadius": 14000, // TODO
+        "outerRadius": 16000, // TODO
+        "minSize": 30,
+        "maxSize": 100,
+        "inclination": 1,
+        "longitudeOfAscendingNode": 40,
+        "procGen": {
+            "scale": 1,
+            "color": { "r": 155, "g": 155, "b": 155, "a": 255}
+        },
+        "randomSeed": 1
+    },
+	"ShipLog": {
+		"mapMode": {
+			"manualPosition": { "x": 0, "y": 0 },
+			"manualNavigationPosition": { "x": 0, "y": 0 },
+			"scale": 3
+		},
+		"xmlFile": "shiplog/Sun_shiplog.xml",
+		"spriteFolder": "shiplog/sprites",
+  	},
+}

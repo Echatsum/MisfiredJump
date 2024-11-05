@@ -1,0 +1,48 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>$MISFIREDJUMP_PLANET_LAVA_NAME</ID>
+
+    <!-- Scalding Abyss -->
+    <Entry><ID>MISFIREDJUMP_ENTRY_SCALDING_ABYSS</ID>
+        <Name>$MISFIREDJUMP_ENTRY_SCALDING_ABYSS</Name>
+        <Curiosity>MISFIREDJUMP_CURIOSITY_LAVA_POD</Curiosity>
+
+        <ExploreFact><ID>MISFIREDJUMP_LOG_SCALDING_ABYSS</ID>
+            <Text>$MISFIREDJUMP_LOG_SCALDING_ABYSS</Text>
+        </ExploreFact>
+        <ExploreFact><ID>MISFIREDJUMP_LOG_SCALDING_ABYSS_BEAM</ID>
+            <Text>$MISFIREDJUMP_LOG_SCALDING_ABYSS_BEAM</Text>
+        </ExploreFact>
+    </Entry>
+
+    <!-- Lava Pod -->
+    <Entry><ID>MISFIREDJUMP_CURIOSITY_LAVA_POD</ID>
+        <Name>$MISFIREDJUMP_CURIOSITY_LAVA_POD</Name>
+        <Curiosity>MISFIREDJUMP_CURIOSITY_LAVA_POD</Curiosity>
+        <IsCuriosity />
+
+        <RumorFact><ID>MISFIREDJUMP_LOG_LAVA_POD_RUMOR</ID>
+            <SourceID>MISFIREDJUMP_ENTRY_SCALDING_ABYSS</SourceID>
+            <Text>$MISFIREDJUMP_LOG_LAVA_POD</Text>
+        </RumorFact>
+
+        <ExploreFact><ID>MISFIREDJUMP_LOG_LAVA_POD</ID>
+            <Text>$MISFIREDJUMP_LOG_LAVA_POD</Text>
+        </ExploreFact>
+        <ExploreFact><ID>MISFIREDJUMP_LOG_LAVA_POD_2</ID>
+            <Text>$MISFIREDJUMP_LOG_LAVA_POD_2</Text>
+        </ExploreFact>
+        <ExploreFact><ID>MISFIREDJUMP_LOG_LAVA_POD_INSIDE</ID>
+            <Text>$MISFIREDJUMP_LOG_LAVA_POD_INSIDE</Text>
+        </ExploreFact>
+        <ExploreFact><ID>MISFIREDJUMP_LOG_LAVA_POD_ABORT</ID>
+            <Text>$MISFIREDJUMP_LOG_LAVA_POD_ABORT</Text>
+        </ExploreFact>
+        <ExploreFact><ID>MISFIREDJUMP_LOG_LAVA_POD_DIVE</ID>
+            <Text>$MISFIREDJUMP_LOG_LAVA_POD_DIVE</Text>
+        </ExploreFact>
+        <ExploreFact><ID>MISFIREDJUMP_LOG_LAVA_POD_NEST</ID>
+            <Text>$MISFIREDJUMP_LOG_LAVA_POD_NEST</Text>
+        </ExploreFact>
+    </Entry>
+</AstroObjectEntry>

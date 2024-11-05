@@ -1,0 +1,24 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>$MISFIREDJUMP_PLANET_ASTEROID_NAME</ID>
+
+    <!-- PROBE LAUNCHER (ASTEROID) -->
+    <Entry><ID>MISFIREDJUMP_ENTRY_ASTEROID</ID>
+        <Name>$MISFIREDJUMP_ENTRY_ASTEROID</Name>
+        <Curiosity>MISFIREDJUMP_CURIOSITY_SYMBOLS</Curiosity>
+
+        <RumorFact><ID>MISFIREDJUMP_LOG_ASTEROID_RUMOR</ID>
+            <SourceID>MISFIREDJUMP_ENTRY_TRANQUIL_HUSK</SourceID>
+            <RumorName>$MISFIREDJUMP_ENTRY_ASTEROID_RUMOR</RumorName>
+            <Text>$MISFIREDJUMP_LOG_ASTEROID_RUMOR</Text>
+        </RumorFact>
+
+        <ExploreFact><ID>MISFIREDJUMP_LOG_ASTEROID_CANNON</ID>
+            <Text>$MISFIREDJUMP_LOG_ASTEROID_CANNON</Text>
+        </ExploreFact>
+
+        <ExploreFact><ID>MISFIREDJUMP_LOG_ASTEROID_COMMAND</ID>
+            <Text>$MISFIREDJUMP_LOG_ASTEROID_COMMAND</Text>
+        </ExploreFact>
+    </Entry>
+</AstroObjectEntry>

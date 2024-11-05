@@ -1,0 +1,59 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>$MISFIREDJUMP_DIALOGUE_ERNESTO_NAME</NameField>
+    
+	<!-- 1 -->
+    <DialogueNode><Name>START_DEFAULT</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		
+        <Dialogue><Page>$MISFIREDJUMP_DIALOGUE_ERNESTO</Page></Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>$MISFIREDJUMP_DIALOGUE_ERNESTO_REPLY</Text>
+				<DialogueTarget>2</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+		
+	</DialogueNode>
+	
+	<!-- 2 -->
+	<DialogueNode><Name>2</Name>
+        <Dialogue><Page>$MISFIREDJUMP_DIALOGUE_ERNESTO_2</Page></Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>$MISFIREDJUMP_DIALOGUE_ERNESTO_2_REPLY</Text>
+                <DialogueTarget>3</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<!-- 3 -->
+	<DialogueNode><Name>3</Name>
+        <Dialogue><Page>$MISFIREDJUMP_DIALOGUE_ERNESTO_3</Page></Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>$MISFIREDJUMP_DIALOGUE_ERNESTO_3_REPLY</Text>
+                <DialogueTarget>4</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<!-- 4 -->
+	<DialogueNode><Name>4</Name>
+        <Dialogue><Page>$MISFIREDJUMP_DIALOGUE_ERNESTO_4</Page></Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>$MISFIREDJUMP_DIALOGUE_ERNESTO_4_REPLY</Text>
+                <DialogueTarget>JAM</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+		<RevealFacts>
+			<FactID>MISFIREDJUMP_LOG_ERNESTO_POSTDIALOGUE</FactID>
+		</RevealFacts>
+	</DialogueNode>
+
+	<!-- JAM -->
+	<DialogueNode><Name>JAM</Name>
+        <Dialogue><Page>$MISFIREDJUMP_DIALOGUE_ERNESTO_JAM</Page></Dialogue>
+	</DialogueNode>
+	
+</DialogueTree>

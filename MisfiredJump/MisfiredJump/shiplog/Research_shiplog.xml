@@ -1,0 +1,51 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>$MISFIREDJUMP_PLANET_RESEARCH_NAME</ID>
+
+    <!-- Tranquil Husk -->
+    <Entry><ID>MISFIREDJUMP_ENTRY_TRANQUIL_HUSK</ID>
+        <Name>$MISFIREDJUMP_ENTRY_TRANQUIL_HUSK</Name>
+        <Curiosity>MISFIREDJUMP_CURIOSITY_WORKSHOP</Curiosity>
+
+        <ExploreFact><ID>MISFIREDJUMP_LOG_TRANQUIL_HUSK</ID>
+            <Text>$MISFIREDJUMP_LOG_TRANQUIL_HUSK</Text>
+        </ExploreFact>
+        <ExploreFact><ID>MISFIREDJUMP_LOG_TRANQUIL_HUSK_PROBES</ID>
+            <Text>$MISFIREDJUMP_LOG_TRANQUIL_HUSK_PROBES</Text>
+        </ExploreFact>
+        <ExploreFact><ID>MISFIREDJUMP_LOG_TRANQUIL_HUSK_STONE</ID>
+            <Text>$MISFIREDJUMP_LOG_TRANQUIL_HUSK_STONE</Text>
+        </ExploreFact>
+        <ExploreFact><ID>MISFIREDJUMP_LOG_TRANQUIL_HUSK_EVACUATED</ID>
+            <Text>$MISFIREDJUMP_LOG_TRANQUIL_HUSK_EVACUATED</Text>
+        </ExploreFact>
+    </Entry>
+
+    <!-- Workshop -->
+    <Entry><ID>MISFIREDJUMP_CURIOSITY_WORKSHOP</ID>
+        <Name>$MISFIREDJUMP_CURIOSITY_WORKSHOP</Name>
+        <Curiosity>MISFIREDJUMP_CURIOSITY_WORKSHOP</Curiosity>
+        <IsCuriosity />
+
+        <RumorFact><ID>MISFIREDJUMP_LOG_WORKSHOP_RUMOR</ID>
+            <SourceID>MISFIREDJUMP_ENTRY_TRANQUIL_HUSK</SourceID>
+            <Text>$MISFIREDJUMP_LOG_WORKSHOP</Text>
+        </RumorFact>
+        <RumorFact><ID>MISFIREDJUMP_LOG_WORKSHOP_EGG_RUMOR</ID>
+            <SourceID>MISFIREDJUMP_CURIOSITY_LAVA_POD</SourceID>
+            <Text>$MISFIREDJUMP_LOG_WORKSHOP_EGG_RUMOR</Text>
+        </RumorFact>
+
+        <ExploreFact><ID>MISFIREDJUMP_LOG_WORKSHOP</ID>
+            <Text>$MISFIREDJUMP_LOG_WORKSHOP</Text>
+        </ExploreFact>
+        <ExploreFact><ID>MISFIREDJUMP_LOG_WORKSHOP_2</ID>
+            <Text>$MISFIREDJUMP_LOG_WORKSHOP_2</Text>
+        </ExploreFact>
+        <ExploreFact><ID>MISFIREDJUMP_LOG_WORKSHOP_PRESS</ID>
+            <Text>$MISFIREDJUMP_LOG_WORKSHOP_PRESS</Text>
+        </ExploreFact>
+    </Entry>
+
+
+</AstroObjectEntry>

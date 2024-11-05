@@ -1,0 +1,23 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name" : "ATP Core",
+	"starSystem": "Jam4System",
+	"Base": {
+		"centerOfSolarSystem": false,
+		"groundSize": 0,
+		"surfaceSize": 0,
+		"hasMapMarker": false,
+		"showMinimap": false,
+	},
+	"canShowOnTitle": false,
+	"Orbit": {
+		"primaryBody": "Jam4Sun",
+		"isStatic": true,
+		"staticPosition": { "x": 40000, "y": 16000, "z": 4000}, // TODO
+		"isTidallyLocked": true,
+		"alignmentAxis": { "x": -1, "y": 0, "z": 0},
+	},
+	"Cloak": {
+		"radius": 20
+	}
+}

@@ -1,0 +1,18 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>SIGN</NameField>
+    
+    <DialogueNode><Name>START_DEFAULT</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		
+        <Dialogue>
+			<Page>Hey there!</Page>
+			<Page>MisfiredJump is a mod made for the 4th OW modding jam under the themes 'Escape'/'Isolation' with the restriction of 'Minimal text'.</Page>
+			<Page>So.. as it often goes, overscoping was a real issue during this jam.</Page>
+			<Page>I cut out a lot of what I wanted to do, but even then I still didn't have time to finish this last puzzle.</Page>
+			<Page>Not too big a deal, since the telescope was already a big one, but an ending like this is a bit abrupt (I do intend on finishing the mod post-jam mind you)</Page>
+			<Page>Regardless, I hope you had fun with my mod as it stands right now.</Page>
+			<Page>One last challenge I have for you if you haven't found him already, is to find our usual anglerfish Easter egg. Otherwise, just get closer to the probe to earn your gameover screen. Cheers!</Page>
+		</Dialogue>
+	</DialogueNode>
+	
+</DialogueTree>

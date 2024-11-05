@@ -1,0 +1,230 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name" : "Outward Gazer",
+	"starSystem": "Jam4System",
+	"Base": {
+		"centerOfSolarSystem": false,
+		"groundSize": 0,
+		"surfaceSize": 150,
+		"surfaceGravity": 10,
+		"gravityFallOff": "linear",
+		"hasMapMarker": true,
+		"showMinimap": true,
+		"ambientLight": 0.8
+	},
+	"Water": {
+		"size": 155
+	},
+	"Sand": {
+		"size": 145
+	},
+	"canShowOnTitle": true,
+	"Orbit": {
+		"primaryBody": "Jam4Sun",
+		"isStatic": true,
+		"staticPosition": { "x": 20000, "y": 0, "z": 0},
+		"isTidallyLocked": true,
+		"alignmentAxis": { "x": -1, "y": 0, "z": 0}
+	},
+	"Spawn": {
+        "playerSpawn": {
+			"startWithSuit": true,
+            "alignRadial": false,
+            "position": {
+                "x": 750,
+                "y": 1000,
+                "z": 400
+            },
+            "rotation": {
+                "x": 12,
+                "y": 34,
+                "z": 56
+            },
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+        },
+        "shipSpawn": {
+            "alignRadial": false,
+            "position": {
+                "x": 750,
+                "y": 1000,
+                "z": 400
+            },
+            "rotation": {
+                "x": 12,
+                "y": 34,
+                "z": 56
+            }
+        }
+    },
+	"ShipLog": {
+		"xmlFile": "shiplog/Telescope_shiplog.xml",
+		"spriteFolder": "shiplog/sprites",
+        "mapMode": {
+			"manualPosition": { "x": 1200, "y": 0 },
+			"manualNavigationPosition": { "x": 4, "y": 0 },
+			"scale": 1.5,
+            "revealedSprite": "shiplog/sprites/solar/Telescope.png",
+            "outlineSprite": "shiplog/sprites/solar/Telescope_Outline.png",
+            "invisibleWhenHidden": false
+        }
+	},
+	"Props": {
+		"details": [
+			{
+				"rename": "TelescopeBuilding",
+				// path to prop
+				"assetBundle": "assetbundles/misfiredjumpbundle",
+				"path": "Assets/Jam4Prefabs/TelescopeBuilding.prefab",
+				// position
+				"position": { "x": 146, "y": 0, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 270 },
+				"scale" : 1,
+				// others
+				"keepLoaded": true
+			},
+			{
+				"rename": "WarpSocketDry",
+				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/WarpCoreWallSockets/WarpCoreSocket", // brokenCore
+				// position
+				"parentPath": "Sector/TelescopeBuilding/Basement/WarpCorePuzzle/DrySocketPlaque",
+				"isRelativeToParent": true,
+				"position": { "x": 0, "y": 0, "z": 0.15 },
+				"rotation": { "x": -90, "y": 90, "z": 0 },
+				"scale" : 1,
+			},
+			{
+				"rename": "WarpSocketFlooded",
+				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/WarpCoreWallSockets/WarpCoreSocket (2)", // whiteCore
+				// position
+				"parentPath": "Sector/TelescopeBuilding/Basement/WarpCorePuzzle/FloodedSocketPlaque",
+				"isRelativeToParent": true,
+				"position": { "x": 0, "y": 0, "z": 0.15 },
+				"rotation": { "x": 90, "y": 90, "z": 0 },
+				"scale" : 1,
+			},
+			{
+				"rename": "LensSocket",
+				"itemSocket": {
+					"itemType": "LensItemType",
+					"colliderRadius": 10,
+					"interactRange": 8,
+					"insertCondition": "COND_LENS_ON_TELESCOPE",
+					"clearInsertConditionOnRemoval": true
+				},
+				// position
+				"parentPath": "Sector/TelescopeBuilding/Telescope/BigTelescopeRotatingPartY/RotatingPartX/LensSocketParent",
+				"isRelativeToParent": true,
+				"position": { "x": 0, "y": 0, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+				"scale" : 1,
+			},
+		],
+		"singularities": [
+			{
+				"rename": "DryBlackHole",
+				"type": "blackHole",
+				"uniqueID": "DRY_BLACKHOLE",
+				"pairedSingularity": "FLOODED_WHITEHOLE",
+				// position
+				"parentPath": "Sector/TelescopeBuilding/Basement/WarpCorePuzzle/SingularityDryLocation/BlackHoleDry",
+				"isRelativeToParent": true,
+				"position": { "x": 0, "y": 0, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+				"scale" : 1,
+				// other
+				"hasWarpEffects": false,
+				"horizonRadius": 1,
+			},
+			{
+				"rename": "FloodedWhiteHole",
+				"type": "whiteHole",
+				"uniqueID": "FLOODED_WHITEHOLE",
+				"pairedSingularity": "DRY_BLACKHOLE",
+				// position
+				"parentPath": "Sector/TelescopeBuilding/Basement/WarpCorePuzzle/SingularityFloodedLocation/WhiteHoleFlooded",
+				"isRelativeToParent": true,
+				"position": { "x": 0, "y": 0, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+				"scale" : 1,
+				// other
+				"horizonRadius": 1,
+			},
+			{
+				"rename": "FloodedBlackHole",
+				"type": "blackHole",
+				"uniqueID": "FLOODED_BLACKHOLE",
+				"pairedSingularity": "DRY_WHITEHOLE",
+				// position
+				"parentPath": "Sector/TelescopeBuilding/Basement/WarpCorePuzzle/SingularityFloodedLocation/BlackHoleFlooded",
+				"isRelativeToParent": true,
+				"position": { "x": 0, "y": 0, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+				"scale" : 1,
+				// other
+				"hasWarpEffects": false,
+				"horizonRadius": 1,
+			},
+			{
+				"rename": "DryWhiteHole",
+				"type": "whiteHole",
+				"uniqueID": "DRY_WHITEHOLE",
+				"pairedSingularity": "FLOODED_BLACKHOLE",
+				// position
+				"parentPath": "Sector/TelescopeBuilding/Basement/WarpCorePuzzle/SingularityDryLocation/WhiteHoleDry",
+				"isRelativeToParent": true,
+				"position": { "x": 0, "y": 0, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+				"scale" : 1,
+				// other
+				"horizonRadius": 1,
+			},
+		],
+		"remotes": [
+			{
+				"id": "Telescope",
+				"decalPath": "decals/Telescope.png",
+				"platform": {
+					"rename": "TelescopePlatform",
+					"disablePool": true,
+					"disableStructure": true,
+					"reveals": "MISFIREDJUMP_LOG_SYMBOLS_ERNESTO", // TODO: why is this not a list?
+					// position
+					"parentPath": "Sector/TelescopeBuilding/EasterEgg/RemotePlatformParent",
+					"isRelativeToParent": true,
+				},
+				"stones": [
+					{
+						"rename": "Telescope Stone",
+						"parentPath": "Sector/TelescopeBuilding/RemoteStoneParent",
+						"isRelativeToParent": true,
+						"alignRadial": true,
+					}
+				]
+			}
+		],
+		"entryLocation": [
+			{
+				"id": "MISFIREDJUMP_ENTRY_OUTWARD_GAZER",
+				"isRelativeToParent": true
+			}
+		]
+	},
+	"Volumes": {
+		"revealVolumes": [
+			{
+				"radius": 180,
+				"reveals": [ "MISFIREDJUMP_LOG_OUTWARD_GAZER" ]
+			},
+			{
+				"radius": 10,
+				"reveals": [ "MISFIREDJUMP_CURIOSITY_TELESCOPE_RUMOR", "MISFIREDJUMP_LOG_TELESCOPE_LENS", "MISFIREDJUMP_LOG_TELESCOPE_GROUND" ],
+				"parentPath": "Sector/TelescopeBuilding/Telescope/BigTelescopeRotatingPartY/RotatingPartX/LensSocketParent",
+				"isRelativeToParent": true
+			}
+		]
+	}
+}

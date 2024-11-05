@@ -1,0 +1,51 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>SIGN</NameField>
+    
+	<!-- 1 -->
+    <DialogueNode><Name>START_DEFAULT</Name>
+		<EntryCondition>DEFAULT</EntryCondition>		
+        <Dialogue><Page>$MISFIREDJUMP_DIALOGUE_SLATE</Page></Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>$MISFIREDJUMP_DIALOGUE_SLATE_REPLY</Text>
+                <DialogueTarget>2</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<!-- 2 -->
+	<DialogueNode><Name>2</Name>
+        <Dialogue><Page>$MISFIREDJUMP_DIALOGUE_SLATE_2</Page></Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>$MISFIREDJUMP_DIALOGUE_SLATE_2_REPLY</Text>
+                <DialogueTarget>3</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<!-- 3 -->
+	<DialogueNode><Name>3</Name>
+        <Dialogue><Page>$MISFIREDJUMP_DIALOGUE_SLATE_3</Page></Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>$MISFIREDJUMP_DIALOGUE_SLATE_3_REPLY</Text>
+                <DialogueTarget>4</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<!-- 4 -->
+	<DialogueNode><Name>4</Name>
+        <Dialogue><Page>$MISFIREDJUMP_DIALOGUE_SLATE_4</Page></Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>$MISFIREDJUMP_DIALOGUE_SLATE_4_REPLY</Text>
+			</DialogueOption>
+		</DialogueOptionsList>
+        
+		<RevealFacts>
+			<FactID>MISFIREDJUMP_LOG_TIMBERHEARTH_POSTDIALOGUE</FactID>
+		</RevealFacts>
+	</DialogueNode>
+</DialogueTree>

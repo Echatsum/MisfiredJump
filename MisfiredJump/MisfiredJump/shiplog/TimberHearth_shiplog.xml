@@ -1,0 +1,15 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>TIMBER_HEARTH</ID>
+
+    <!-- Slate Intro (Curiosity) -->
+    <Entry><ID>MISFIREDJUMP_CURIOSITY_NEW_WARP_DRIVE</ID>
+        <Name>$MISFIREDJUMP_CURIOSITY_NEW_WARP_DRIVE</Name>
+        <Curiosity>MISFIREDJUMP_CURIOSITY_NEW_WARP_DRIVE</Curiosity>
+        <IsCuriosity />
+
+        <ExploreFact><ID>MISFIREDJUMP_LOG_TIMBERHEARTH_POSTDIALOGUE</ID>
+            <Text>$MISFIREDJUMP_LOG_TIMBERHEARTH_POSTDIALOGUE</Text>
+        </ExploreFact>
+    </Entry>
+</AstroObjectEntry>

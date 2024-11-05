@@ -1,0 +1,75 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name" : "Faceless Drifter",
+	"starSystem": "Jam4System",
+	"Base": {
+		"centerOfSolarSystem": false,
+		"groundSize": 37.5,
+		"surfaceSize": 37.5,
+		"surfaceGravity": 10,
+		"gravityFallOff": "linear",
+		"hasMapMarker": true,
+		"showMinimap": true,
+		"ambientLight": 0.2
+	},
+	"canShowOnTitle": false,
+	"Orbit": {
+		"primaryBody": "Jam4Sun",
+		"isStatic": true,
+		"staticPosition": { "x": -17000, "y": 0, "z": 0},
+		"isTidallyLocked": true,
+		"alignmentAxis": { "x": -1, "y": 0, "z": 0},
+		"isMoon": true,
+	},
+	"ShipLog": {
+		"xmlFile": "shiplog/Asteroid_shiplog.xml",
+		"spriteFolder": "shiplog/sprites",
+        "mapMode": {
+			"manualPosition": { "x": 900, "y": 0 },
+			"manualNavigationPosition": { "x": 3, "y": 0 },
+			"scale": 1,
+            "revealedSprite": "shiplog/sprites/solar/Asteroid.png",
+            "outlineSprite": "shiplog/sprites/solar/Asteroid.png",
+            "invisibleWhenHidden": false,
+        }
+	},
+	"Props": {
+		"details": [
+			{
+				"rename": "CannonBuildings",
+				// path to prop
+				"assetBundle": "assetbundles/misfiredjumpbundle",
+				"path": "Assets/Jam4Prefabs/CannonBuildings.prefab",
+				// position
+				"position": { "x": 0, "y": 0, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+				"scale" : 1,
+				// others
+				"keepLoaded": true
+			},
+		],
+		"remotes": [
+			{
+				"id": "Cannon",
+				"decalPath": "decals/Cannon.png",
+				"platform": {
+					"rename": "CannonPlatform",
+					"disablePool": true,
+					"disableStructure": true,
+					"reveals": "MISFIREDJUMP_LOG_ASTEROID_RUMOR",
+					// position
+					"parentPath": "Sector/CannonBuildings/RemotePlatformParent",
+					"isRelativeToParent": true,
+				}
+			}
+		],
+		"entryLocation": [ // directional markers toggable in shiplog
+			{
+				"id": "MISFIREDJUMP_ENTRY_ASTEROID",
+				"isRelativeToParent": true,
+			}
+		],
+	},
+	"Volumes": {
+	}
+}

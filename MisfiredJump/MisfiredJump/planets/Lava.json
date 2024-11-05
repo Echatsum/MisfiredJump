@@ -1,0 +1,276 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name" : "Scalding Abyss",
+	"starSystem": "Jam4System",
+	"Base": {
+		"centerOfSolarSystem": false,
+		"groundSize": 150,
+		"surfaceSize": 150,
+		"surfaceGravity": 15,
+		"gravityFallOff": "linear",
+		"hasMapMarker": true,
+		"showMinimap": true,
+		"invulnerableToSun": false,
+	},
+	"Lava": {
+		"size": 170 // TODO
+	},
+	"canShowOnTitle": false,
+	"Orbit": {
+		"primaryBody": "Jam4Sun",
+		"semiMajorAxis": 4500,
+		"eccentricity": 0,
+		"argumentOfPeriapsis": 0,
+		"axialTilt": 0,
+		"longitudeOfAscendingNode": 0,
+		"trueAnomaly": 0,
+		"inclination": 0,
+		"siderealPeriod": 3,
+		"initialRotation": 0,
+		// display
+		"showOrbitLine": true,
+		"trackingOrbitLine": false,
+		"dottedOrbitLine": false,
+		"tint": { "r": 200, "g": 20, "b": 20 } // TODO
+	},
+	"ShipLog": {
+		"xmlFile": "shiplog/Lava_shiplog.xml",
+		"spriteFolder": "shiplog/sprites",
+        "mapMode": {
+			"manualPosition": { "x": 300, "y": 0 },
+			"manualNavigationPosition": { "x": 1, "y": 0 },
+			"scale": 1.7,
+            "revealedSprite": "shiplog/sprites/solar/Lava.png",
+            "outlineSprite": "shiplog/sprites/solar/Lava_Outline.png",
+            "invisibleWhenHidden": false
+        }
+	},
+	"Props": {
+		"details": [
+			{
+				"rename": "LavaBuilding",
+				// path to prop
+				"assetBundle": "assetbundles/misfiredjumpbundle",
+				"path": "Assets/Jam4Prefabs/LavaBuilding.prefab",
+				// position
+				"position": { "x": 0, "y": 180, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+				"scale" : 1,
+				// others
+				"keepLoaded": true
+			},
+			{
+				"rename": "WarpSocketBuilding",
+				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/WarpCoreWallSockets/WarpCoreSocket (2)", // whiteCore
+				// position
+				"parentPath": "Sector/LavaBuilding/Building/Main/WarpSocketPlaque",
+				"isRelativeToParent": true,
+				"position": { "x": 0, "y": 0, "z": 0.15 },
+				"rotation": { "x": 90, "y": 90, "z": 0 },
+				"scale" : 1,
+			},
+			{
+				"rename": "WarpSocketPod",
+				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/WarpCoreWallSockets/WarpCoreSocket (1)", // blackCore
+				// position
+				"parentPath": "Sector/LavaBuilding/Pod/WarpSocketPlaque",
+				"isRelativeToParent": true,
+				"position": { "x": 0, "y": 0, "z": 0.15 },
+				"rotation": { "x": 90, "y": 90, "z": 0 },
+				"scale" : 1,
+			},
+			{
+				"rename": "EggSocket",
+				"deactivationCondition": "COND_EGG_ACQUIRED",
+				"blinkWhenActiveChanged": false,
+				"itemSocket": {
+					"itemType": "EggItemType",
+					"colliderRadius": 0.5,
+					"interactRange": 5,
+					"removalCondition": "COND_EGG_ACQUIRED"
+				},
+				// position
+				"parentPath": "Sector/LavaBuilding/Pod/EggSocketParent",
+				"isRelativeToParent": true,
+				"position": { "x": 0, "y": 0, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+				"scale" : 1,
+			},
+			{
+				"rename": "Egg of Igneous Bukrad",
+				"item": {
+					"itemType": "EggItemType",
+					"pathToInitialSocket": "Sector/LavaBuilding/Pod/EggSocketParent/EggSocket",
+					"colliderRadius": 0.75,
+					"interactRange": 3,
+					"pickupAudio": "ToolItemSharedStonePickUp",
+					"dropAudio": "ToolItemSharedStoneDrop",
+					"socketAudio": "ToolItemSharedStoneInsert",
+					"unsocketAudio": "ToolItemSharedStoneRemove"
+				},
+				// path to prop
+				"assetBundle": "assetbundles/misfiredjumpbundle",
+				"path": "Assets/Jam4Prefabs/BukradEgg.prefab",
+			}
+		],
+		"slideShows": [
+			// Pod, No arm
+			{
+				"rename": "Empty",
+				"type": "autoProjector",
+				"slides": [
+					{ "imagePath": "slides/PodEmpty.png" }
+				],
+				// position
+				"parentPath": "Sector/LavaBuilding/Pod/ProjectorBox/ProjectorsParent",
+				"isRelativeToParent": true,
+			},
+			{
+				"rename": "LeftObstacle",
+				"type": "autoProjector",
+				"slides": [
+					{ "imagePath": "slides/PodLeftObstacle.png" }
+				],
+				// position
+				"parentPath": "Sector/LavaBuilding/Pod/ProjectorBox/ProjectorsParent",
+				"isRelativeToParent": true,
+			},
+			{
+				"rename": "FrontObstacle",
+				"type": "autoProjector",
+				"slides": [
+					{ "imagePath": "slides/PodFrontObstacle.png" }
+				],
+				// position
+				"parentPath": "Sector/LavaBuilding/Pod/ProjectorBox/ProjectorsParent",
+				"isRelativeToParent": true,
+			},
+			{
+				"rename": "RightObstacle",
+				"type": "autoProjector",
+				"slides": [
+					{ "imagePath": "slides/PodRightObstacle.png" }
+				],
+				// position
+				"parentPath": "Sector/LavaBuilding/Pod/ProjectorBox/ProjectorsParent",
+				"isRelativeToParent": true,
+			},
+			{
+				"rename": "LeftRightObstacle",
+				"type": "autoProjector",
+				"slides": [
+					{ "imagePath": "slides/PodLeftRightObstacle.png" }
+				],
+				// position
+				"parentPath": "Sector/LavaBuilding/Pod/ProjectorBox/ProjectorsParent",
+				"isRelativeToParent": true,
+			},
+			{
+				"rename": "Nest",
+				"type": "autoProjector",
+				"slides": [
+					{ "imagePath": "slides/PodNest.png" }
+				],
+				// position
+				"parentPath": "Sector/LavaBuilding/Pod/ProjectorBox/ProjectorsParent",
+				"isRelativeToParent": true,
+			},
+			// Pod, arm
+			{
+				"rename": "EmptyArm",
+				"type": "autoProjector",
+				"slides": [
+					{ "imagePath": "slides/PodEmptyArm.png" },
+					{ "imagePath": "slides/PodEmpty.png" }
+				],
+				// position
+				"parentPath": "Sector/LavaBuilding/Pod/ProjectorBox/ProjectorsParent",
+				"isRelativeToParent": true,
+			},
+			{
+				"rename": "LeftObstacleArm",
+				"type": "autoProjector",
+				"slides": [
+					{ "imagePath": "slides/PodLeftObstacleArm.png" },
+					{ "imagePath": "slides/PodLeftObstacle.png" }
+				],
+				// position
+				"parentPath": "Sector/LavaBuilding/Pod/ProjectorBox/ProjectorsParent",
+				"isRelativeToParent": true,
+			},
+			{
+				"rename": "FrontObstacleArm",
+				"type": "autoProjector",
+				"slides": [
+					{ "imagePath": "slides/PodFrontObstacleArm.png" },
+					{ "imagePath": "slides/PodFrontObstacle.png" }
+				],
+				// position
+				"parentPath": "Sector/LavaBuilding/Pod/ProjectorBox/ProjectorsParent",
+				"isRelativeToParent": true,
+			},
+			{
+				"rename": "RightObstacleArm",
+				"type": "autoProjector",
+				"slides": [
+					{ "imagePath": "slides/PodRightObstacleArm.png" },
+					{ "imagePath": "slides/PodRightObstacle.png" }
+				],
+				// position
+				"parentPath": "Sector/LavaBuilding/Pod/ProjectorBox/ProjectorsParent",
+				"isRelativeToParent": true,
+			},
+			{
+				"rename": "LeftRightObstacleArm",
+				"type": "autoProjector",
+				"slides": [
+					{ "imagePath": "slides/PodLeftRightObstacleArm.png" },
+					{ "imagePath": "slides/PodLeftRightObstacle.png" }
+				],
+				// position
+				"parentPath": "Sector/LavaBuilding/Pod/ProjectorBox/ProjectorsParent",
+				"isRelativeToParent": true,
+			},
+			{
+				"rename": "NestArm",
+				"type": "autoProjector",
+				"slides": [
+					{ "imagePath": "slides/PodNestArm.png" },
+					{ "imagePath": "slides/PodNest.png" }
+				],
+				// position
+				"parentPath": "Sector/LavaBuilding/Pod/ProjectorBox/ProjectorsParent",
+				"isRelativeToParent": true,
+			},
+		],
+		"translatorText": [
+			{
+				"rename": "podArmSocketBug",
+				"parentPath": "Sector/LavaBuilding/Pod/EggSocketParent",
+				"isRelativeToParent": true,
+				"position": { "x": 0, "y": 0, "z": -3 },
+				"rotation": { "x": 0, "y": -90, "z": 0 },
+				"scale" : 1,
+				"alignRadial": true,
+				"xmlFile": "text/podArmSocketBug.xml"
+			}
+		],
+		"entryLocation": [
+			{
+				"id": "MISFIREDJUMP_ENTRY_SCALDING_ABYSS",
+				"isRelativeToParent": true
+			}
+		]
+	},
+	"Volumes": {
+		"destructionVolumes": [
+			{
+				"deathType": "lava",
+				"parentPath": "Sector/LavaBuilding/Pod/DeathMode",
+				"isRelativeToParent": true,
+				"onlyAffectsPlayerRelatedBodies": true,
+				"radius": 30 // don't know how to make it fit the box, so just a large radius
+			}
+		]
+	}
+}

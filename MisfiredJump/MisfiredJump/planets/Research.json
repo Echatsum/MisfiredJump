@@ -1,0 +1,154 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name" : "Tranquil Husk",
+	"starSystem": "Jam4System",
+	"Base": {
+		"centerOfSolarSystem": false,
+		"groundSize": 100,
+		"surfaceSize": 100,
+		"surfaceGravity": 10,
+		"hasMapMarker": true,
+		"showMinimap": false,
+		"ambientLight": 0.8
+	},
+	"Atmosphere": {
+		"size": 150,
+		"hasOxygen": true,
+		"hasTrees": true,
+		"atmosphereTint": {},
+		"useAtmosphereShader": false,
+		"atmosphereSunIntensity": 1,
+		"hasShockLayer": true,
+		"allowShipAutoroll": true,
+	},
+	"canShowOnTitle": false,
+	"Orbit": {
+		"primaryBody": "Jam4Sun",
+		"semiMajorAxis": 8000,
+		"eccentricity": 0,
+		"argumentOfPeriapsis": 0,
+		"axialTilt": 0,
+		"longitudeOfAscendingNode": 0,
+		"trueAnomaly": 0,
+		"inclination": 0,
+		"siderealPeriod": 4.2,
+		"initialRotation": 0,
+		// display
+		"showOrbitLine": true,
+		"trackingOrbitLine": false,
+		"dottedOrbitLine": false,
+		"tint": { "r": 20, "g": 200, "b": 20 }
+	},
+	"ShipLog": {		
+		"xmlFile": "shiplog/Research_shiplog.xml",
+		"spriteFolder": "shiplog/sprites",
+        "mapMode": {
+			"manualPosition": { "x": 600, "y": 0 }, // TODO
+			"manualNavigationPosition": { "x": 2, "y": 0 }, // TODO
+			"scale": 1.5,
+            "revealedSprite": "shiplog/sprites/solar/Research.png",
+            "outlineSprite": "shiplog/sprites/solar/Research_Outline.png",
+            "invisibleWhenHidden": false
+        }
+	},
+	"Props": {
+		"details": [
+			{
+				"rename": "Settlement",
+				// path to prop
+				"assetBundle": "assetbundles/misfiredjumpbundle",
+				"path": "Assets/Jam4Prefabs/Settlement.prefab",
+				// position
+				"position": { "x": 0, "y": 100, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+				"scale" : 1,
+				// others
+				"keepLoaded": true
+			},
+			{
+				"rename": "EggSocket",
+				"itemSocket": {
+					"itemType": "EggItemType",
+					"colliderRadius": 0.5,
+					"interactRange": 5,
+					"insertCondition": "COND_EGG_IN_PRESS"
+				},
+				"deactivationCondition": "COND_EGG_IN_PRESS", // despawns when egg in it
+				"blinkWhenActiveChanged": true,
+				// position
+				"parentPath": "Sector/Settlement/PressBuilding/Press/EggSocketParent",
+				"isRelativeToParent": true,
+				"position": { "x": 0, "y": 0, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+				"scale" : 1,
+			},
+			{
+				"rename": "RemovableLensFrame",
+				"deactivationCondition": "COND_EGG_IN_PRESS",
+				// path to prop
+				"assetBundle": "assetbundles/misfiredjumpbundle",
+				"path": "Assets/Jam4Prefabs/LensFrame.prefab",
+				// position
+				"parentPath": "Sector/Settlement/PressBuilding/Lenses",
+				"isRelativeToParent": true,
+				"position": { "x": -2, "y": 1, "z": 1.4 },
+				"rotation": { "x": 70, "y": 0, "z": 0 },
+				"scale" : 1,
+			},
+			{
+				"rename": "Bukradite Lens",
+				"activationCondition": "COND_EGG_IN_PRESS",
+				"item": {
+					"itemType": "LensItemType",
+					"colliderRadius": 1.5,
+					"interactRange": 3,
+					"pickupAudio": "ToolItemWarpCorePickUp",
+					"dropAudio": "ToolItemWarpCoreDrop",
+					"socketAudio": "ToolItemSharedStoneInsert",
+					"unsocketAudio": "ToolItemSharedStoneRemove"
+				},
+				// path to prop
+				"assetBundle": "assetbundles/misfiredjumpbundle",
+				"path": "Assets/Jam4Prefabs/Lens.prefab",
+				// position
+				"parentPath": "Sector/Settlement/PressBuilding/Press/EggSocketParent",
+				"isRelativeToParent": true,
+				"position": { "x": 0, "y": 0, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+				"scale" : 1,
+			},
+		],
+		"remotes": [
+			{
+				"id": "Research",
+				"decalPath": "decals/Research.png",
+				"platform": {
+					"rename": "ResearchPlatform",
+					"disablePool": true,
+					"disableStructure": false,
+					// position
+					"parentPath": "Sector/Settlement/RemotePlatformParent",
+					"isRelativeToParent": true,
+				}
+			},
+			{
+				"id": "Cannon",
+				"decalPath": "decals/Cannon.png",
+				"stones": [
+					{
+						"rename": "Cannon Stone",
+						"parentPath": "Sector/Settlement/ClueBuilding/RemoteStoneParent",
+						"isRelativeToParent": true,
+						"alignRadial": true
+					}
+				]
+			}
+		],
+		"entryLocation": [
+			{
+				"id": "MISFIREDJUMP_ENTRY_TRANQUIL_HUSK",
+				"isRelativeToParent": true
+			}
+		]
+	}
+}

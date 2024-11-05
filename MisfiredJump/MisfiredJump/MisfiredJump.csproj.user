@@ -1,0 +1,6 @@
+﻿<Project>
+  <PropertyGroup>
+    <OutputPath>$(AppData)/OuterWildsModManager/OWML/Mods/Echatsum.MisfiredJump</OutputPath>
+    <UnityProjectPath>E:\Users\Ech\Unity projects\OuterWilds\outer-wilds-unity-assets-main-jam4\Assets\Jam4-CSharp</UnityProjectPath>
+  </PropertyGroup>
+</Project>

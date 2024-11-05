@@ -1,0 +1,72 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>$MISFIREDJUMP_PLANET_PROBES_NAME</ID>
+
+    <!-- Deepspace Probes (Object) -->
+    <Entry><ID>MISFIREDJUMP_ENTRY_DEEPSPACE_PROBES_OBJECT</ID>
+        <Name>$MISFIREDJUMP_CURIOSITY_DEEPSPACE_PROBES_RUMOR</Name>
+        <Curiosity>MISFIREDJUMP_CURIOSITY_DEEPSPACE_PROBES</Curiosity>
+
+        <RumorFact><ID>MISFIREDJUMP_LOG_PROBE_RUMOR</ID>
+            <SourceID>MISFIREDJUMP_CURIOSITY_TELESCOPE</SourceID>
+            <Text>$MISFIREDJUMP_LOG_PROBE_RUMOR</Text>
+        </RumorFact>
+
+        <ExploreFact><ID>MISFIREDJUMP_LOG_PROBE</ID>
+            <Text>$MISFIREDJUMP_LOG_PROBE_RUMOR</Text>
+        </ExploreFact>
+    </Entry>
+    
+    <!-- Deepspace Probes -->
+    <Entry><ID>MISFIREDJUMP_CURIOSITY_DEEPSPACE_PROBES</ID>
+        <Name>$MISFIREDJUMP_CURIOSITY_DEEPSPACE_PROBES</Name>
+        <Curiosity>MISFIREDJUMP_CURIOSITY_DEEPSPACE_PROBES</Curiosity>
+        <IsCuriosity />
+
+        <ExploreFact><ID>MISFIREDJUMP_LOG_PROBE_SIGNAL</ID>
+            <Text>$MISFIREDJUMP_LOG_PROBE_SIGNAL</Text>
+        </ExploreFact>
+        <ExploreFact><ID>MISFIREDJUMP_LOG_PROBE_SIGNAL_2</ID>
+            <Text>$MISFIREDJUMP_LOG_PROBE_SIGNAL_2</Text>
+        </ExploreFact>
+    </Entry>
+
+    <!-- Ernesto -->
+    <Entry><ID>MISFIREDJUMP_ENTRY_ERNESTO_OBJECT</ID> <!-- Entry is mostly blank as to get a waypoint but not reveal it's Ernesto -->
+        <Name>$MISFIREDJUMP_ENTRY_ERNESTO_RUMOR</Name>
+        <Curiosity>MISFIREDJUMP_CURIOSITY_DEEPSPACE_PROBES</Curiosity>
+
+        <RumorFact><ID>MISFIREDJUMP_LOG_ERNESTO_RUMOR</ID>
+            <SourceID>MISFIREDJUMP_CURIOSITY_TELESCOPE</SourceID>
+            <Text>$MISFIREDJUMP_LOG_ERNESTO_RUMOR</Text>
+        </RumorFact>
+
+        <ExploreFact><ID>MISFIREDJUMP_LOG_ERNESTO</ID>
+            <Text>$MISFIREDJUMP_LOG_ERNESTO_RUMOR</Text>
+        </ExploreFact>
+
+        <Entry><ID>MISFIREDJUMP_ENTRY_ERNESTO</ID>
+            <Name>$MISFIREDJUMP_ENTRY_ERNESTO</Name>
+            <Curiosity>MISFIREDJUMP_CURIOSITY_DEEPSPACE_PROBES</Curiosity>
+            <ExploreFact><ID>MISFIREDJUMP_LOG_ERNESTO_POSTDIALOGUE</ID>
+                <Text>$MISFIREDJUMP_LOG_ERNESTO_POSTDIALOGUE</Text>
+            </ExploreFact>
+        </Entry>
+
+    </Entry>
+
+    <!-- Lost Core -->
+    <Entry><ID>MISFIREDJUMP_ENTRY_LOST_CORE</ID>
+        <Name>$MISFIREDJUMP_ENTRY_LOST_CORE</Name>
+        <Curiosity>MISFIREDJUMP_CURIOSITY_DEEPSPACE_PROBES</Curiosity>
+
+        <RumorFact><ID>MISFIREDJUMP_LOG_LOST_CORE_RUMOR</ID>
+            <SourceID>MISFIREDJUMP_CURIOSITY_DEEPSPACE_PROBES</SourceID>
+            <Text>$MISFIREDJUMP_LOG_LOST_CORE</Text>
+        </RumorFact>
+
+        <ExploreFact><ID>MISFIREDJUMP_LOG_LOST_CORE</ID>
+            <Text>$MISFIREDJUMP_LOG_LOST_CORE</Text>
+        </ExploreFact>
+    </Entry>
+</AstroObjectEntry>

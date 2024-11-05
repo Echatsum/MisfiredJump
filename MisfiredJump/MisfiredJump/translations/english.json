@@ -1,0 +1,149 @@
+{
+	"$schema": "https://raw.githubusercontent.com/outer-wilds-new-horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+	"UIDictionary": {
+		"LeftRightTelescopeConsolePrompt": "Left / Right",
+		"UpDownTelescopeConsolePrompt": "Up / Down",
+		"ChangeZoomTelescopeConsolePrompt": "Change Zoom",
+		"DropDownPodConsolePrompt": "Drop",
+		"LeftRightPodConsolePrompt": "Left / Right",
+		"ForwardPodConsolePrompt": "Forwards",
+		"UseArmPodConsolePrompt": "Use Arm"
+	},
+	"DialogueDictionary": {
+		// TODO: Add Slate's intro dialogue
+		"$MISFIREDJUMP_DIALOGUE_SLATE": "Hey Hatchling, before you go-",
+		"$MISFIREDJUMP_DIALOGUE_SLATE_REPLY": "Yeah yeah, I've already got the codes.",
+		"$MISFIREDJUMP_DIALOGUE_SLATE_2": "No, not that. Just wanted to let you know that I've come up with a new engine for your ship. Engineered from some shiny Nomai warp tech, same as your little scout but with a lot more oompf.",
+		"$MISFIREDJUMP_DIALOGUE_SLATE_2_REPLY": "Really? Nice.",
+		"$MISFIREDJUMP_DIALOGUE_SLATE_3": "Yup, and I've already gotten it installed on your ship. No need to thank me.",
+		"$MISFIREDJUMP_DIALOGUE_SLATE_3_REPLY": "Oh. Should I know about any other deathtraps that you tape onto my ship behind my back?",
+		"$MISFIREDJUMP_DIALOGUE_SLATE_4": "It passed all previous tests without a hitch, thank you very much. Also I use very good tape, the amount of loose pieces has always been within acceptable levels.",
+		"$MISFIREDJUMP_DIALOGUE_SLATE_4_REPLY": "I'm going to test your thing before I start to think about the dark magic used to keep your creations together.",
+
+		// TODO: Add Ernesto's dialogue
+		"$MISFIREDJUMP_DIALOGUE_ERNESTO_NAME": "Ernesto",
+		"$MISFIREDJUMP_DIALOGUE_ERNESTO": "Hey it's me Ernesto the magic talking anglerfish.",
+		"$MISFIREDJUMP_DIALOGUE_ERNESTO_REPLY": "What are you doing here?",
+		"$MISFIREDJUMP_DIALOGUE_ERNESTO_2": "Well as you can see I was enjoying a nice vacation with with husband, doing a relaxing roadtrip together. But out of nowhere this thing hit us on the side, it's crazy what some people just throw out in space.",
+		"$MISFIREDJUMP_DIALOGUE_ERNESTO_2_REPLY": "That sounds terrible!",
+		"$MISFIREDJUMP_DIALOGUE_ERNESTO_3": "Yeah well, we're not hurt, that's the most important. Geswaldo is still a bit shocked though, so please give him some space. That being said, our ride is busted, so could we get in yours until the next station?",
+		"$MISFIREDJUMP_DIALOGUE_ERNESTO_3_REPLY": "I mean.. As much as I would like to, I don't think either of you fit in the hatch. Also my own engine is cooked, I don't think I can go much beyond this system as is.",
+		"$MISFIREDJUMP_DIALOGUE_ERNESTO_4": "Ah, no worries then. We'll just hitchhike and wait for the next ship to pass by. You take care.",
+		"$MISFIREDJUMP_DIALOGUE_ERNESTO_4_REPLY": "Good luck you two, see you around.",
+		"$MISFIREDJUMP_DIALOGUE_ERNESTO_JAM": "Oh by the way, if you found me soonish after the jam ended, do send a message to the mod creator. Maybe he'll add you to the credits as a dedicated player.",
+	},
+	"ShipLogDictionary": {
+		// Planet names
+		"$MISFIREDJUMP_PLANET_SUN_NAME": "JAM4SUN",
+		"$MISFIREDJUMP_PLANET_LAVA_NAME": "Scalding Abyss",
+		"$MISFIREDJUMP_PLANET_RESEARCH_NAME": "Tranquil Husk",
+		"$MISFIREDJUMP_PLANET_ASTEROID_NAME": "Faceless Drifter",
+		"$MISFIREDJUMP_PLANET_TELESCOPE_NAME": "Outward Gazer",
+		"$MISFIREDJUMP_PLANET_PROBES_NAME": "Deepspace Objects",
+
+		// TIMBER HEARTH (Original system)
+		"$MISFIREDJUMP_CURIOSITY_NEW_WARP_DRIVE": "New Warp Drive",
+		"$MISFIREDJUMP_LOG_TIMBERHEARTH_POSTDIALOGUE": "Slate has installed a new warp drive on the ship and told me to give it a try.",
+		
+		// [PURPLE]
+		// SUN - Init
+		"$MISFIREDJUMP_ENTRY_BROKENWARP": "Broken Warp",
+		"$MISFIREDJUMP_LOG_BROKENWARP_INTRO": "Slate's experimental warp engine broke after the first trial jump. I think a part flew off just before I came to a stop.",
+		"$MISFIREDJUMP_LOG_BROKENWARP_INTRO_2": "Perhaps I could repair it if I could find a replacement part.",
+		
+		// PROBE - On solving puzzle
+		"$MISFIREDJUMP_CURIOSITY_DEEPSPACE_PROBES": "Deepspace Probes",
+		"$MISFIREDJUMP_CURIOSITY_DEEPSPACE_PROBES_RUMOR": "Deepspace Object",
+		"$MISFIREDJUMP_LOG_PROBE_RUMOR": "The telescope spotted something in deep space.",
+		"$MISFIREDJUMP_LOG_PROBE_SIGNAL": "There is a probe in deep space emitting a faint signal.",
+		"$MISFIREDJUMP_LOG_PROBE_SIGNAL_2": "The signalscope picks up other probes on this frequency.",
+		
+		// PROBE - On solving puzzle (Ernesto version)
+		"$MISFIREDJUMP_ENTRY_ERNESTO": "Ernesto",
+		"$MISFIREDJUMP_ENTRY_ERNESTO_RUMOR": "Deepspace Object",
+		"$MISFIREDJUMP_LOG_ERNESTO_RUMOR": "The telescope spotted something in deep space.",
+		"$MISFIREDJUMP_LOG_ERNESTO_POSTDIALOGUE": "Ernesto was on a nice road trip with his husband when he got T-boned by a probe. Fortunately no one was hurt, but now the couple is forced to hitchhike.",
+		
+		// PROBE - On finding the lost core
+		"$MISFIREDJUMP_ENTRY_LOST_CORE": "Lost Core",
+		"$MISFIREDJUMP_LOG_LOST_CORE": "I found the lost core by triangulating the probes",
+		
+		// [BLUE]
+		// TELESCOPE - Init
+		"$MISFIREDJUMP_ENTRY_OUTWARD_GAZER": "Outward Gazer",
+		"$MISFIREDJUMP_LOG_OUTWARD_GAZER": "A planet beyond the asteroid planet with a large structure facing towards deep space.",
+		
+		// TELESCOPE - Entering building
+		"$MISFIREDJUMP_CURIOSITY_TELESCOPE": "Telescope",
+		"$MISFIREDJUMP_LOG_TELESCOPE_GROUND": "The structure is housing a very large telescope.",
+		"$MISFIREDJUMP_LOG_TELESCOPE_LENS": "The large telescope is missing its lens.",
+		
+		"$MISFIREDJUMP_LOG_TELESCOPE_SYMBOL_RUMOR": "The symbols are coordinates where the cannon fired its last probe.",
+		"$MISFIREDJUMP_LOG_TELESCOPE_ORIENTATION_RUMOR": "The console controls the telescope orientation.",
+		
+		// TELESCOPE - Interacting with console
+		"$MISFIREDJUMP_ENTRY_TELESCOPE_CONSOLE": "Telescope Console",
+		"$MISFIREDJUMP_LOG_TELESCOPE_CONSOLE": "There is a console in the basement with a miniature telescope.",
+		"$MISFIREDJUMP_LOG_TELESCOPE_CONSOLE_2": "The console doesn't seem to be initially powered.",
+		"$MISFIREDJUMP_LOG_TELESCOPE_CONSOLE_NOLENS": "When powered, the console controls the orientation of the telescope. However zooming still is unresponsive.",
+		"$MISFIREDJUMP_LOG_TELESCOPE_CONSOLE_LENS": "After replacing the lens, the telescope is fully adjustable.",
+		
+		"$MISFIREDJUMP_LOG_TELESCOPE_CONSOLE_POWERON_RUMOR": "The lower basement houses the power generator for the console.",
+		
+		// TELESCOPE - Power side (next to door or scout)
+		"$MISFIREDJUMP_ENTRY_LOWER_BASEMENT": "Lower Basement",
+		"$MISFIREDJUMP_LOG_LOWER_BASEMENT_DOOR": "Part of the basement is blocked off by a collapsed doorway.",
+		"$MISFIREDJUMP_LOG_LOWER_BASEMENT_BATTERIES": "I can see rows of what might be batteries.",
+		"$MISFIREDJUMP_LOG_LOWER_BASEMENT_FLOODING": "The lower side of the basement became flooded after a bit.",
+		"$MISFIREDJUMP_LOG_LOWER_BASEMENT_POWERON": "There is a master switch in the lower side of the basement. There is a lot of power there.",
+		
+		// [GREY]
+		// TELESCOPE - Picking easter egg stone
+		"$MISFIREDJUMP_ENTRY_HIDDEN_STONE": "Hidden Stone",
+		"$MISFIREDJUMP_LOG_HIDDEN_STONE": "I found a hidden projection stone in an alcove.",
+		
+		// RESEARCH / ASTEROID - Inserting cannon stone, or getting there without
+		"$MISFIREDJUMP_ENTRY_ASTEROID_RUMOR": "Cannon Platform",
+		"$MISFIREDJUMP_LOG_ASTEROID_RUMOR": "I used a Nomai pool to see a large cannon on a planetoid somewhere.",
+		"$MISFIREDJUMP_ENTRY_ASTEROID": "Probe Launcher",
+		"$MISFIREDJUMP_LOG_ASTEROID_CANNON": "There is a small cannon mounted on this asteroid.",
+		"$MISFIREDJUMP_LOG_ASTEROID_COMMAND": "There is a command building linked to the cannon platform. It shows peculiar symbols.",
+
+		// SUN (mixed) - whenever seeing symbols
+		"$MISFIREDJUMP_CURIOSITY_SYMBOLS": "Peculiar Symbols",
+		"$MISFIREDJUMP_LOG_SYMBOLS_TELESCOPE": "I saw a set of symbols on a wall on the Outward Gazer.",
+		"$MISFIREDJUMP_LOG_SYMBOLS_CANNON": "I saw a set of symbols on a wall on the Faceless Drifter.",
+		"$MISFIREDJUMP_LOG_SYMBOLS_ERNESTO": "Using a projection pool, I saw a set of symbols on a wall.",
+		
+		// [GREEN]
+		// RESEARCH - Exploring
+		"$MISFIREDJUMP_ENTRY_TRANQUIL_HUSK": "Tranquil Husk",
+		"$MISFIREDJUMP_LOG_TRANQUIL_HUSK": "A planet with a deserted settlement.",
+		"$MISFIREDJUMP_LOG_TRANQUIL_HUSK_PROBES": "Whoever lived here did not shut down everything before leaving. Machines and flashing screens are still in working order.",
+		"$MISFIREDJUMP_LOG_TRANQUIL_HUSK_STONE": "There's a projection stone in one of the buildings, and a projection pool not far.",
+		"$MISFIREDJUMP_LOG_TRANQUIL_HUSK_EVACUATED": "There is no sign of life in the settlement. However this does not seem to be from a sudden event, as the buildings appear cleanly emptied.",
+		
+		// RESEARCH - Entering building
+		"$MISFIREDJUMP_CURIOSITY_WORKSHOP": "Workshop",
+		"$MISFIREDJUMP_LOG_WORKSHOP": "There's a workshop amongst the buildings.",
+		"$MISFIREDJUMP_LOG_WORKSHOP_2": "The workshop seems to have been mostly cleaned out. There is no scroll on the shelves and the containers are empty.",
+		"$MISFIREDJUMP_LOG_WORKSHOP_PRESS": "At the back corner is a press machine and circular frames.",
+		"$MISFIREDJUMP_LOG_WORKSHOP_EGG_RUMOR": "The metal plate next to the press was a map to a nest of Igneous Bukrads.",
+		"$MISFIREDJUMP_LOG_WORKSHOP_LENS": "The workshop was used to craft new lenses for the telescope.",
+		
+		// [RED]
+		// LAVA - Exploring
+		"$MISFIREDJUMP_ENTRY_SCALDING_ABYSS": "Scalding Abyss",
+		"$MISFIREDJUMP_LOG_SCALDING_ABYSS": "A single building peeks out of this giant fiery ball.",
+		"$MISFIREDJUMP_LOG_SCALDING_ABYSS_BEAM": "Ouch my bones. The beams are miscalibrated, I need to be careful around them.",
+		
+		// LAVA - Pod
+		"$MISFIREDJUMP_CURIOSITY_LAVA_POD": "Lava Pod",
+		"$MISFIREDJUMP_LOG_LAVA_POD": "The building has an open floor with a pod dangling above the lava.",
+		"$MISFIREDJUMP_LOG_LAVA_POD_2": "The outside of pod has four movable legs and a pincer arm.",
+		"$MISFIREDJUMP_LOG_LAVA_POD_INSIDE": "The inside of the pod has a console, screens, an air tank and a singularity core.",
+		"$MISFIREDJUMP_LOG_LAVA_POD_ABORT": "The pod is able to use the core to warp to its original location.",
+		"$MISFIREDJUMP_LOG_LAVA_POD_DIVE": "The pod can be dropped into the lava below, and survive the intense heat for a short time.",	
+		"$MISFIREDJUMP_LOG_LAVA_POD_NEST": "There is a nest of.. something, down there. The pod must have been used to collect the eggs.",	
+	}
+}
